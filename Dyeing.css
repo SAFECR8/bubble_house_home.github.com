@@ -1,0 +1,77 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+    border: 2px solid aqua;
+    color: aqua;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+    transition-property: background-color, color;
+    margin: 150px;
+}
+.cta:hover {
+	color: white;
+	background-color: aqua;
+}
+.Hero span{
+    color: aqua;
+}
+#Hero{
+    background-image: url(./img/dyeing.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#Hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .7;
+	z-index: -1;
+}
+#Hero h1{
+    font-size: 4rem;
+    margin: 100px;
+    color: white;
+
+}
+p {
+    margin: 80px;
+	color: white;
+	font-size: 1.4rem;
+    margin-top: 5px;
+    text-align: left;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
+}
